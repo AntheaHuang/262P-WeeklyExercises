@@ -1,5 +1,7 @@
 This is the Repo for 262P-Weekly Exercises
 
+Java version used: 21.0.6
+
 To run the code of WEEK3, use the following command:
     For Seven.java: 
         1. cd week3 

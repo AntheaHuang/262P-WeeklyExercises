@@ -1,4 +1,7 @@
 {
   "java.project.sourcePaths": ["week3"],
-  "java.project.referencedLibraries": []
+  "java.project.referencedLibraries": [],
+  "[markdown]": {
+    "editor.formatOnSave": false
+  }
 }

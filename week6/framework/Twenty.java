@@ -11,9 +11,9 @@ public class Twenty {
     public static String configPath = "../config.properties";
 
 	public static IExtract Extractor;
-	private static ICount Counter;
+	public static ICount Counter;
 
-	public static void load_plugins() {
+	public static void loadPlugins() {
 		Properties prop = new Properties();
 
 		//load properties file
@@ -46,7 +46,7 @@ public class Twenty {
 		URLClassLoader classLoader2 = new URLClassLoader(new URL[]{freqJarURL});
 
 		try {
-			//load the class and get the instance
+			//load the class and create new instance
 			Extractor = (IExtract) classLoader1.loadClass(extractClass).getDeclaredConstructor().newInstance();     
 			Counter = (ICount) classLoader2.loadClass(freqClass).getDeclaredConstructor().newInstance();
 		} catch(Exception e){
@@ -58,12 +58,12 @@ public class Twenty {
 	public static void main(String[] args) {
         String filePath = args[0];
 
-		load_plugins();
+		loadPlugins();
 
 		try{
 			List<Map. Entry<String, Integer>> wordCount = Counter.countWords(Extractor.extractWords(filePath));
 			for(Map.Entry<String, Integer> entry : wordCount) {
-				System.out.println(entry.getKey() + "  -  " + entry.getValue());
+				System.out.println(entry.getKey() + " - " + entry.getValue());
 			}
 		}catch(Exception e){
 			e.printStackTrace();

@@ -112,3 +112,44 @@ Java version used: 21.0.6
     ```
     java Streams pride-and-prejudice.txt
     ```
+
+- To run the code of WEEK8, use the following command:
+
+  - For Twentynine.java:
+
+    ```
+    cd week8
+    ```
+
+    ```
+    javac Twentynine.java
+    ```
+
+    ```
+    java Twentynine ../pride-and-prejudice.txt
+    ```
+
+  - For Thirty.java:
+
+    ```
+    cd week8
+    ```
+
+    ```
+    javac Thirty.java
+    ```
+
+    ```
+    java Thirty ../pride-and-prejudice.txt
+    ```
+
+  - For Thirtytwo.java:
+    ```
+    cd week8
+    ```
+    ```
+    javac Thirtytwo.java
+    ```
+    ```
+    java Thirtytwo ../pride-and-prejudice.txt
+    ```

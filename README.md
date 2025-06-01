@@ -144,12 +144,25 @@ Java version used: 21.0.6
     ```
 
   - For Thirtytwo.java:
+
     ```
     cd week8
     ```
+
     ```
     javac Thirtytwo.java
     ```
+
     ```
     java Thirtytwo ../pride-and-prejudice.txt
     ```
+
+- To run the code of WEEK9, use the following command (make sure the numpy package is installed):
+
+  ```
+  cd week9
+  ```
+
+  ```
+  python3 Three.py ../pride-and-prejudice.txt
+  ```
